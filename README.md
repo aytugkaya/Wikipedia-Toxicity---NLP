@@ -1,4 +1,4 @@
-This project pending completion.
+This project is pending completion.
 
 Baseline methods were used to solve wikipedia toxicity nlp challenge
 
