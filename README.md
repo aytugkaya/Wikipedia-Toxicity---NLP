@@ -29,6 +29,10 @@ Models were not saved since Keras can't save custom layers, but weights were sav
 
 Text pre-processed csv files can be found in "preprocessed_data" folder. 7-zip will be required to unzip the files.
 
+For RNN text-preprocessing please refer to "text_preprocess.ipynb"
+
+For baseline models please refer to "NLP_v6.ipynb"
+
 For wikipedia comment source files please visit:
 https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data
 
