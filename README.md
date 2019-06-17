@@ -1,6 +1,6 @@
 BiDirectional LSTMs and Attention with Context for Detecting Wikipedia Toxic Comments
 ---------------------------------------------------------------------------------------
-Wikipedia, the largest and most popular general reference work on the World Wide Web, is based on open collaboration.Open collaboration has its own difficulties since it enables insertion of contents that are toxic, due to identity hate, improper language or obscenetiy.
+Wikipedia, the largest and most popular general reference work on the World Wide Web, is based on open collaboration. Open collaboration has its own difficulties since it enables insertion of contents that are toxic, due to identity hate, improper language or obscenetiy.
 
 This project aims to build machine Learning models that’s capable of detecting different types of of toxicity like threats, obscenity, insults, and identity-based hate by processing comments.
 
@@ -14,11 +14,11 @@ Neural networks evaluated for this project include feed forward dense, CNN, LSTM
 
 The biggest problem ran into during this project was mislabeled instances. The model can only work effectively if the labels it is introduced are precise, and would produce erroneous results when fed with arbitrary labels. Unfortunately, during EDA analysis of this dataset, many comment texts were found to be mislabeled and it is impossible to assess the ratio or the impact on the model before reading all comments.
 
-Due to the imbalance in the dataset, ROC AUC score would produce meaningless results, and thus was not preferred. Instead, the model performance was measured by precision recall curve.
+Due to the imbalance in the dataset, ROC AUC score would produce meaningless results, and thus was not preferred. Instead, the model performance was measured by precision recall auc.
 
-The model produced good results with BiDirectional LSTMs and Attention layer, and showed significant improvement with introduction of oversampling. Various activations, number of hidden layers, dropout percentages, batch sizes were tried to achieve these results, however there could still be room for improvement on the hyperparameter tuning.
+The model produced good results with BiDirectional LSTMs and Attention layer, and showed significant improvement with introduction of oversampling. Various activations, number of hidden layers, dropout percentages, batch sizes were tried to achieve these results, however there could still be room for improvement on the hyperparameter tuning side.
 
-For future work, planned area of improvement is using word embeddings to build a synonyms dictionary for data augmentation, which would be used to alleviate class imbalance.
+For future work, planned area of improvement is using word embeddings to build a synonyms dictionary for data augmentation, which would be alleviate class imbalance.
 
 Other are of planned future work includes using Bidirectional Encoder Representations from Transformers, or BERT, which will be handled as a separate project.
 
@@ -28,8 +28,6 @@ Other are of planned future work includes using Bidirectional Encoder Representa
 Models were not saved since Keras can't save custom layers, but weights were saved and can be found in "saved_model_weights" folder.
 
 Text pre-processed csv files can be found in "preprocessed_data" folder. 7-zip will be required to unzip the files.
-
-
 
 For wikipedia comment source files please visit:
 https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data
